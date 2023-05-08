@@ -40,7 +40,7 @@ function RestaurantFilter(props: Props) {
       <br />
       <label>
         Distance (in km):
-        <input type="number" value={distance} onChange={(event) => setDistance(Number(event.target.value))} />
+        <input type="number" value={distance} onChange={(event) => setDistance(parseInt(event.target.value))} />
       </label>
       <br />
       <button onClick={handleFilterChange}>Filter</button>
